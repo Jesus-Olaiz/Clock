@@ -1,0 +1,60 @@
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+
+    background-color: slategrey;
+}
+
+
+#clock{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    background-color: green;
+}
+
+#clockFace{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap: 10px;
+
+    height: 375px;
+    width: 375px;
+    border-radius:50%;
+
+    background-color: red;
+}
+
+.workTime{
+    width:200px;
+    margin: 0 auto;
+    background-color:yellow;
+}
+
+.breakTime{
+    
+    width:200px;
+    margin: 0 auto;
+
+    background-color: lightgreen;
+}
+
+.workTimer,
+.breakTimer{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+
+    width:100%;
+    margin-bottom: 1em;
+}
