@@ -97,19 +97,11 @@ function after(min, sec) {
 // Starting the full set when start is clicked
 start.addEventListener("click", () => {
     
-        /******************
-Overview of what the issue is: You cant get the countdown function to run synchronously because the setInterval function runs async by default. Considered using promises but it seems to overcomplicate things when all you want to do is basically wait for the function to finish before running it again with different params. Tried using set timeout and calculating the time each call would have to wait and sort of creating a queue of sorts but that tanked since you cant really predict what the user will input for the break time and the work time.   
-        *******************/
-    
-
     // first countdown commences with the work timer
     countDown(workMin, workSec)
 
-    countDown(breakMin, breakSec)
-    
-    //used a set timeout to wait for the time it takes to complete the first countdown
-    // setTimeout(() => countDown(breakMin, breakSec), after(workMin, workSec))
-
+    // Starting break timer after waiting full work timer length
+    setTimeout(() => countDown(breakMin, breakSec), after(workMin, workSec))
     
     
 })
