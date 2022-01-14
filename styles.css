@@ -7,54 +7,140 @@ body{
     background-color: slategrey;
 }
 
-
 #clock{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 3rem;
 
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    margin: 0 auto;
+    min-height: 43vh;
+    width: 85vw;
 
-    background-color: green;
+    border: black outset 5px;
+    border-radius: 5px;
+    
+
+    background-color: rgb(122, 122, 122);
 }
+
+.clockName{
+    margin: 0;
+    font-family: 'Neonderthaw', cursive;
+
+    
+
+    color: rgb(255, 196, 34);
+
+    text-shadow: 0 0 4px rgb(255, 159, 34);
+}
+
+#clock button{
+    font-size: 1.75rem;
+
+    border: outset black 2px;
+    border-radius: 3px;
+}
+
+.startStop{
+    margin: 3% auto 0 34.25%;
+    display: flex;
+    gap: 1rem;
+
+    width: 30%;
+
+}
+
+#start{
+    background-color: rgb(23, 105, 23);
+
+    border-color: rgb(23, 105, 23);
+
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+#stop{
+    background-color: rgb(177, 35, 35);
+
+    border-color: rgb(177, 35, 35);
+
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
 
 #clockFace{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:center;
     gap: 10px;
 
-    height: 375px;
-    width: 375px;
-    border-radius:50%;
+    margin: 0 auto;
 
-    background-color: red;
+    height: 25vh;
+    max-width: 75vw;
+
+    
+    
+}
+.workFace,
+.breakFace{
+    width: 100%;
+    height: 80%;
 }
 
 .workTime{
-    width:200px;
-    margin: 0 auto;
-    background-color:yellow;
+    width:95%;
+    height: 75%;
+    margin: auto;
+    background-color:rgba(255, 166, 0, 0.493);
+
+    border-radius: 5px;
+    border: inset 2px black;
 }
 
 .breakTime{
+    width:95%;
+    height: 75%;
     
-    width:200px;
-    margin: 0 auto;
+    margin: auto;
 
-    background-color: lightgreen;
+    background-color: rgba(255, 166, 0, 0.493);
+
+    border: inset 2px black;
+    border-radius: 5px;
 }
 
 .workTimer,
 .breakTimer{
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
+    display: flex;
+    justify-content:center;
+
+    font-size: 6rem;
 
     width:100%;
-    margin-bottom: 1em;
+    margin: auto auto;
+
+    font-family: 'VT323', monospace;
+}
+
+.workFace h3,
+.breakFace h3{
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+
+.breakButtons{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    right: 8.25%;
+    top: 18.5%;
+}
+.workButtons{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    left: 8.25%;
+    top: 18.5%;
 }

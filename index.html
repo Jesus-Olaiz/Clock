@@ -5,36 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer &#127813;</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&family=VT323&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
     <div id="clock">
+        <h1 class="clockName">Pomodoro</h1>
         <div id="clockFace">
-            <div class="workTime">
-                <h3>Work Length</h3>
-                <div class="workTimer">
-                    <div class="wMin">00</div>:<div class="wSec">00</div>
+            <div class="workFace">
+                <h3>WORK LENGTH</h3>
+                <div class="workTime">
+                    
+                    <div class="workTimer">
+                        <div class="wMin">00</div>:<div class="wSec">00</div>
+                    </div>
+                    
                 </div>
-                <button id="wTimeDown">-</button>
-                <button id="wTimeUp">+</button>
-            </div>
-
-            <div class="breakTime">
-                <h3>Break Length</h3>
-                <div class="breakTimer">
-                    <div class="bMin">00</div>:<div class="bSec">00</div>
-                </div>
-                <button id="bTimeDown">-</button>
-                <button id="bTimeUp">+</button>
+                <div class="workButtons">
+                    <button id="wTimeUp">+</button>
+                    <button id="wTimeDown">-</button>
+                </div> 
             </div>
             
+            <div class="breakFace">
+                <h3>BREAK LENGTH</h3>
+                <div class="breakTime">
+                    
+                    <div class="breakTimer">
+                        <div class="bMin">00</div>:<div class="bSec">00</div>
+                    </div>
+                    
+                </div>
+
+                <div class="breakButtons">
+                    <button id="bTimeUp">+</button>
+                    <button id="bTimeDown">-</button>
+                </div>
+                
+            </div>
+            
+            
         </div>
+
+        <div class="startStop">
+            <button id="start">START</button>
+            <button id="stop">STOP</button>
+        </div>
+        
     </div>
 
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    
 </body>
 
 <script src="script.js"></script>
